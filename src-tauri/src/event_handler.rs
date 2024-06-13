@@ -107,7 +107,14 @@ fn start_playing_thread(
 
                     *current_track_index = Some((track_index, songs_len));
 
-                    let mut read_stream = ReadDiskStream::<SymphoniaDecoder>::new(&song.path, 0, opts).unwrap();
+                    let mut read_stream = match ReadDiskStream::<SymphoniaDecoder>::new(&song.path, 0, opts) {
+                        Ok(stream) => stream,
+                        Err(e) => {
+                            eprintln!("error: {}", e);
+                            continue;
+                        }
+                    };
+
                     let _ = read_stream.cache(0, 0);
                     read_stream.seek(0, Default::default()).unwrap();
                     read_stream.block_until_ready().unwrap();
