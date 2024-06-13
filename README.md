@@ -14,6 +14,9 @@ navigate into the source directory and run the following commands in your termin
 
 please plan in that this project will create a folder in your home dir called "lmdb_data" this is just used to store configurations
 
+### important!! 
+in case you encounter issues while building, like i experienced with my arm macbook, please make sure to verify, that it is really my fault by creating a new tauri project and see if that works
+
 ## How to use 
 1. click on "choose directory" and select the directory containing your audio files (atm: .mp3 and .flac are supported)
 ![image](https://github.com/mari-rs/audioplayer-demo/assets/98649425/a8006b69-2535-46a5-8995-dd18ebfa7b8e)
