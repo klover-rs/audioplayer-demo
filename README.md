@@ -10,7 +10,7 @@ this is a demo for a next upcoming planned project, THIS IS A DEMO, YOU WILL ENC
 ### Building the project
 navigate into the source directory and run the following commands in your terminal
 - `npm i` 
-- `npm run tauri dev` for debugging, or `npm run tauri build` for a build of the application (could be unstable in some cases) 
+- `npm run tauri dev` for debugging, or `npm run tauri build` for a build of the application
 
 please plan in that this project will create a folder in your home dir called "lmdb_data" this is just used to store configurations
 
@@ -23,4 +23,6 @@ in case you encounter issues while building, like i experienced with my arm macb
 2. after you have done that, click on the button which says "Go To Library"
 3. there you will see all of the playable songs in the directory
 ![image](https://github.com/mari-rs/audioplayer-demo/assets/98649425/40b8f2ae-f4c1-46b1-8167-90beee9cf7fa)
-4. i am sure you can figure the rest yourself out :3 
+4. i am sure you can figure the rest yourself out :3
+
+in case you encounter issues in debug mode like higher buffering times, stutters in audio after seeking etc. This is normal, in release mode you wont experience these issues. 
