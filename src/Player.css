@@ -1,0 +1,41 @@
+.player {
+    background-color: rgb(48, 3, 3);
+    height: 100px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    right: 0px;
+}
+
+.control-btns {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.control-btns-inner {
+    display: flex;
+}
+
+.frames-count {
+    text-align: center;
+}
+
+.is-buffering {
+    color:red;
+  }
+  
+  .is-buffered {
+    color:green;
+  }
+
+.player-state {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-state-inner {
+    display: flex;
+    gap: 10px;
+}

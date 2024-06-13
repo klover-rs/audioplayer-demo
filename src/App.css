@@ -1,0 +1,28 @@
+.all-devices {
+  margin-top: 20px;
+  background-color: rgb(34, 34, 34);
+  border-radius: 20px;
+}
+
+.all-devices li {
+  list-style: none;
+}
+
+.loop-region-set-btn {
+  margin-left: 0px;
+}
+
+.loop-region {
+  background-color: rgb(34, 34, 34);
+  padding-bottom: 12px;
+  padding-top: 10px;
+  border-radius: 20px;
+}
+
+
+.go-to-library-btn {
+  width: 20%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: x-large;
+}

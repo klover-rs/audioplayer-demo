@@ -1,0 +1,41 @@
+.go-back-btn {
+    height: fit-content;
+    margin-top: 13px;
+}
+
+.library-header {
+    display: flex;
+}
+
+.library-header-inner {
+    display: flex;
+    gap: 15px;
+}
+
+.library-items {
+
+    background-color: rgb(54, 0, 0);
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+    justify-items: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 8px 8px 6px rgba(0, 0, 0, 0.5);
+    
+}
+
+
+.library-items-li {
+    list-style: none;
+    text-align: center;
+}
+
+.song-path {
+    color: rgb(156, 156, 156);
+    font-size: small;
+}
+
+.control-btn {
+    margin-left: 7px;
+}
