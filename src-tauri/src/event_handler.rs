@@ -83,16 +83,13 @@ fn start_playing_thread(
         std::thread::spawn(move || {
 
             let to_process_tx_clone = to_process_tx_clone.clone();
-
-            
-            println!("does the thread start?");
          
             while let Ok(track_index) = switch_track_rx.recv() {
                 
                 let songs_vec = SONGS.lock().unwrap();
 
                 let songs_len = songs_vec.len();
-                if track_index <= songs_len {
+                if track_index < songs_len {
 
                     let opts: ReadStreamOptions<SymphoniaDecoder> = ReadStreamOptions {
                         num_cache_blocks: 20,
