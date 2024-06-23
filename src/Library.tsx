@@ -76,7 +76,6 @@ export default function Library() {
                 </ul>
             </div>
             </div>
-            {/* well calculate here -1, else it will crash for some reaosn bleh*/}
             <Player/>
         </div>
     );
